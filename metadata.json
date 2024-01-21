@@ -1,0 +1,6 @@
+{
+  "name": "Centry: EventNode hub",
+  "version": "0.1",
+  "depends_on": [],
+  "init_after": []
+}
