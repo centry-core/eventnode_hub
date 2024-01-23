@@ -73,6 +73,8 @@ class SIO:  # pylint: disable=E1101,R0903
             self.clients[sid]["room"] = room
         #
         self.context.sio.enter_room(sid, self.clients[sid]["room"])
+        #
+        log.info("EventNode %s joined %s", sid, self.clients[sid]["room"])
 
     @web.sio("eventnode_event")
     def eventnode_event(self, sid, data):
