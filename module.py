@@ -39,8 +39,5 @@ class Module(module.ModuleModel):
     def deinit(self):
         """ De-init module """
         log.info("De-initializing module")
-        # EventNode
-        self.event_node.unsubscribe("log_data", self.on_log_data)
-        self.event_node.stop()
         # De-init
         # self.descriptor.deinit_all()
