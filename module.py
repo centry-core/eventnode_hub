@@ -17,6 +17,10 @@
 
 """ Module """
 
+import websocket  # pylint: disable=E0401
+import engineio.client  # pylint: disable=E0401
+engineio.client.websocket = websocket
+
 from pylon.core.tools import log  # pylint: disable=E0611,E0401
 from pylon.core.tools import module  # pylint: disable=E0611,E0401
 
